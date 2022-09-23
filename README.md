@@ -47,3 +47,18 @@
   }
 }
 ```
+
+## Wikipedia
+
+```
+{
+  Get {
+    Paragraph (nearText: {
+      concepts: ["male"]
+    }) {
+      title,
+      content,
+    }
+  }
+}
+```
