@@ -3,7 +3,24 @@
 - https://console.semi.technology/
 - https://www.graphqlbin.com/v2/new
 
-## TV Tropes
+## Query
+
+### Wikipedia
+
+```
+{
+  Get {
+    Paragraph (nearText: {
+      concepts: ["male"]
+    }) {
+      title,
+      content,
+    }
+  }
+}
+```
+
+### TV Tropes
 
 ```
 {
@@ -33,7 +50,7 @@
 }
 ```
 
-## Aesthetics Wiki
+### Aesthetics Wiki
 
 ```
 {
@@ -48,17 +65,8 @@
 }
 ```
 
-## Wikipedia
+## Data Sources
 
-```
-{
-  Get {
-    Paragraph (nearText: {
-      concepts: ["male"]
-    }) {
-      title,
-      content,
-    }
-  }
-}
-```
+- https://github.com/webaverse/wikipedia-scraper
+- https://github.com/webaverse/tvtropes-scraper
+- https://github.com/webaverse/aesthetics-wiki-scraper
