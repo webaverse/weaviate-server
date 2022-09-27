@@ -8,21 +8,6 @@ https://weaviate.webaverse.com/
 
 ## Query
 
-### Wikipedia
-
-```
-{
-  Get {
-    Paragraph (nearText: {
-      concepts: ["male"]
-    }) {
-      title,
-      content,
-    }
-  }
-}
-```
-
 ### TV Tropes
 
 ```
